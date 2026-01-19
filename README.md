@@ -29,3 +29,13 @@ the same hashes.
 5. Navigate to `C:\windows\system32\catroot\{127d0a1d-4ef2-11d1-8608-00c04fc295ee}`
     1. If the folder does not exist, create it
     2. Copy DXVK.cat to folder
+
+### Verifying
+
+If you are interested in verifying the signatures in the binary, it is possible to do so with `osslsigncode` 
+on linux, the code signing certificate `CA/dawncodesign.crt` is provided, in order to check, the signature 
+on a release binary, you can use the commands:
+```bash
+cat CA/ca-root.crt CA/interm.crt > chain.crt
+osslsigncode verify -in <binary> -c <catalog> -CAfile chain.crt
+```
