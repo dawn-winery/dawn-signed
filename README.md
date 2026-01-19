@@ -39,3 +39,20 @@ on a release binary, you can use the commands:
 cat CA/ca-root.crt CA/interm.crt > chain.crt
 osslsigncode verify -in <binary> -c <catalog> -CAfile chain.crt
 ```
+# Wine
+
+Required for a certain anime game.
+
+## Installation
+
+1. Open `wine control`, Internet Settings -> Content -> Certificates
+    1. Navigate to "Trusted Root Certification Authorities"
+    2. Click Import
+    3. Follow wizard, select the "ca-root.crt" when prompted, leave remaining settings as is, and finish.
+2. Install the signed dxvk (also can be found in the dawn-signed repo) using
+it's readme, skipping the installation of the  ca-root.crt has it has 
+already been installed here in step 1.
+3. With the prefix setup game can be run normally.
+
+Note: The Anime Game may kick you out one or two times, by the third time it
+should accept and proceed.
