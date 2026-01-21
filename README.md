@@ -3,6 +3,16 @@ Collection of signed builds of wine and dxvk for certain anime games
 
 The CA certificates used for signing the builds are in the CA directory.
 
+The currently available signed builds:
+- dxvk v2.7.1
+- dxvk-gplasync v2.7.1
+- dxvk-Sarek v1.11.0
+- dxmt v0.72
+
+- spritz-wine-tkg-aagl v10.15-5
+- wine gcenx v11.0 (for MacOS)
+- dwproton v10.0-14
+
 ## DXVK
 
 Useful for a certain honkers railway, the game does not require a patch where this is installed.
