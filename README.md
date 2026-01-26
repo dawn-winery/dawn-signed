@@ -3,6 +3,9 @@ Collection of signed builds of wine and dxvk for certain anime games
 
 The CA certificates used for signing the builds are in the CA directory.
 
+Since 2026-01-24, releases are signed with a new key, CA/dawncodesign2.ca (Dawn Winery Code Signing Certificate V2)
+Which has the correct EKUs to pass wintrust this time.
+
 The currently available signed builds:
 - dxvk v2.7.1
 - dxvk-gplasync v2.7.1
