@@ -11,9 +11,11 @@ The currently available signed builds:
 - dxvk-gplasync v2.7.1
 - dxvk-Sarek v1.11.0
 - dxmt v0.72
+- dxmt v0.74
 
 - spritz-wine-tkg-aagl v10.15-5
 - wine gcenx v11.0 (for MacOS)
+- wine gcenx v11.4 (for MacOS, staging and devel)
 - dwproton v10.0-14
 
 ## DXVK
